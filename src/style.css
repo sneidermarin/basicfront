@@ -61,3 +61,54 @@ body {
 .login-container button:hover {
   background: #2563eb;
 }
+
+.registro-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #f2f2f2;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+.registro-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.registro-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.registro-container input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.registro-container input:focus {
+  border-color: #0077cc;
+  outline: none;
+  background-color: #e8f4ff;
+}
+
+.registro-container button {
+  padding: 10px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.registro-container button:hover {
+  background-color: #005fa3;
+}
