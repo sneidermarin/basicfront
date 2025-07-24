@@ -2,6 +2,7 @@ import './style.css';
 import { Home } from './pages/Home.js';
 import { Login } from './components/Login.js';
 import { Registro } from './components/Registro.js';
+import { Dashboard } from './components/Dashboard.js';
 
 function loadPage() {
   const app = document.getElementById('app');
@@ -10,14 +11,12 @@ function loadPage() {
   if (route === '#/registro') {
     app.innerHTML = Registro();
 
-    // Esperamos a que se monte el formulario en el DOM
     setTimeout(() => {
       const form = document.getElementById('registro-form');
       if (form) {
         form.addEventListener('submit', async (e) => {
           e.preventDefault();
 
-          // Capturamos valores del formulario
           const nombre = form.nombre?.value.trim();
           const correo = form.correo?.value.trim();
           const password = form.password?.value.trim();
@@ -53,10 +52,14 @@ function loadPage() {
           }
         });
       }
-    }, 100); // Esperamos un poco para asegurar que se renderice el DOM
+    }, 100);
 
   } else if (route === '#/login') {
     app.innerHTML = Login();
+
+  } else if (route === '#/dashboard') {
+    app.innerHTML = Dashboard();
+
   } else {
     app.innerHTML = Home();
   }
@@ -65,4 +68,5 @@ function loadPage() {
 // Escuchar cambios en la URL (hash) y cargar la vista correspondiente
 window.addEventListener('hashchange', loadPage);
 window.addEventListener('load', loadPage);
+
 

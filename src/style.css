@@ -112,3 +112,106 @@ body {
 .registro-container button:hover {
   background-color: #005fa3;
 }
+
+.dashboard-container {
+  padding: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+.dashboard-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.dashboard-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.dashboard-table thead {
+  background-color: #007bff;
+  color: white;
+}
+
+.dashboard-table th,
+.dashboard-table td {
+  padding: 12px 15px;
+  text-align: center;
+  border: 1px solid #dee2e6;
+}
+
+.dashboard-table tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.dashboard-table tbody tr:hover {
+  background-color: #e9ecef;
+}
+
+.dashboard-table button {
+  padding: 5px 10px;
+  margin: 0 3px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.3s;
+}
+
+.dashboard-table .btn-view {
+  background-color: #17a2b8;
+  color: white;
+}
+
+.dashboard-table .btn-edit {
+  background-color: #ffc107;
+  color: white;
+}
+
+.dashboard-table .btn-delete {
+  background-color: #dc3545;
+  color: white;
+}
+
+.dashboard-table button:hover {
+  opacity: 0.9;
+}
+
+.btn-view, .btn-edit, .btn-delete {
+  margin: 0 4px;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-view {
+  background-color: #2196F3;
+  color: white;
+}
+
+.btn-edit {
+  background-color: #FFC107;
+  color: black;
+}
+
+.btn-delete {
+  background-color: #F44336;
+  color: white;
+}
